@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* banner */
+.banner {
+  width: 100%;
+  height: 90vh;
+  background-color: gray;
+  background-image: url("./images/banner.jpg");
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 70px;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.logo {
+  width: 10%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-text {
+  background-color: #04364a;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  width: 45%;
+  height: 100%;
+  padding-right: 50px;
+  /* background-color: red; */
+}
+.nav-links {
+  width: 100%;
+  height: 70px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link {
+  padding: 5px 10px;
+  display: block;
+  font-size: 19px;
+}
+.nav-link:hover {
+  transition: all 0.3s;
+  background-color: #04364a;
+  color: white !important;
+  cursor: pointer;
+}
+/* banner details */
+.banner-details {
+  /* background-color: red; */
+  width: 100%;
+  padding: 20px 15%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+.badge {
+  width: max-content;
+  padding: 10px 20px;
+  background-color: lightgrey;
+  font-family: "poppins";
+  font-size: 20px;
+  border-radius: 10px;
+}
+.banner-heading {
+  font-size: 85px;
+  color: white;
+}
+.btn {
+  padding: 18px 30px;
+  font-size: 18px;
+  background-color: #04364a;
+  color: white;
+  border: 1px solid #04364a;
+  cursor: pointer;
+}
+.booking {
+  width: 100%;
+  padding: 20px 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  column-gap: 20px;
+}
+.inp {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  justify-content: flex-end;
+}
+input {
+  height: 40px;
+  text-indent: 5px;
+  font-size: 16px;
+}
+.book-btn {
+  white-space: nowrap;
+  padding: 10px 30px;
+}
+/* about */
+.about {
+  width: 100%;
+  padding: 50px 15%;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 300;
+  word-spacing: 10px;
+}
+.highlight {
+  font-size: 25px;
+}
+/* rooms area */
+.rooms {
+  width: 100%;
+  padding: 50px 15%;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title {
+  font-size: 30px;
+}
+.rooms-area {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.room {
+  width: 30%;
+  background-color: white;
+}
+.room-img {
+  height: 270px;
+  width: 100%;
+  overflow: hidden;
+}
+.room-image {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.room-image:hover {
+  transform: scale(1.5);
+}
+.room-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+/* subscribe */
+.subscribe {
+  width: 100%;
+  padding: 50px 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-text {
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.logo2 {
+  width: 50%;
+}
+.sub-desc {
+  font-size: 15px;
+}
+.sub-area {
+  /* border: 1px solid red; */
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+.sub-form {
+  display: flex;
+}
+.sub-inp {
+  width: 70%;
+  height: 60px;
+}
+/*food area*/
+.food {
+  width: 100%;
+  /* border: 1px solid red; */
+  height: 80vh;
+  padding: 50px 15%;
+  background-color: #ffffff;
+  background-image: url("./images/restaurant.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.food-detail {
+  width: 65%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 15px;
+}
+.section-header {
+  font-size: 45px;
+}
+/* premium-rooms area */
+.premium {
+  width: 100%;
+  padding: 50px 15%;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prooms-area {
+  width: 100%;
+  height: 1000px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.proom-img {
+  width: 30%;
+  height: 1000px;
+  overflow: hidden;
+}
+.prooms-boxes {
+  width: 65%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.proom-image {
+  width: 100%;
+}
+.proom-box {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 15px;
+}
+
+/* gallery-area */
+.gallery {
+  width: 100%;
+  padding: 50px 15%;
+  background-color: black;
+}
+.gall-img {
+  width: 33%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.gall-img:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 950px) {
+  .header {
+    padding: 10px 40px;
+  }
+  .nav {
+    margin: auto;
+  }
+  .nav-link {
+    font-size: 15px;
+  }
+  .logo {
+    width: 20%;
+  }
+  .logo-text {
+    font-size: 15px;
+  }
+  .badge {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+  .banner-heading {
+    font-size: 50px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .booking {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    column-gap: 10px;
+  }
+
+  .inp {
+    width: 20%;
+    row-gap: 5px;
+  }
+  .lbl {
+    white-space: nowrap;
+  }
+  input {
+    height: 30px;
+    text-indent: 5px;
+    font-size: 13px;
+  }
+  .rezerve {
+    width: 30% !important;
+  }
+  .book-btn {
+    /* white-space: nowrap; */
+    padding: 5px 20px;
+  }
+  /*!  room  */
+  .rooms {
+    width: 100%;
+    padding: 50px 15%;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+  .rooms-area {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .room {
+    width: 100%;
+  }
+
+  .room-details {
+    padding: 5px;
+    row-gap: 8px;
+  }
+  /*!  subscribe  */
+  .subscribe {
+    flex-direction: column;
+  }
+  .sub-text {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 20px;
+  }
+  .logo2 {
+    width: 125%;
+  }
+  .sub-desc {
+    font-size: 15px;
+  }
+  .sub-area {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    padding: 10px;
+  }
+  .sub-form {
+    display: flex;
+  }
+  .sub-inp {
+    width: 70%;
+    height: 60px;
+  }
+  /*!   food    */
+  .food {
+    padding: 25px 15%;
+    justify-content: start;
+    color: #125166;
+  }
+  .food-detail {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+  }
+  .section-header {
+    font-size: 30px;
+  }
+  /*!  premium  */
+  .premium {
+    padding: 25px 15%;
+  }
+  .prooms-area {
+    width: 100%;
+    height: 1200px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .proom-img {
+    display: none;
+  }
+  .prooms-boxes {
+    width: 100%;
+    height: 1000px;
+  }
+  .proom-image {
+    width: 100%;
+  }
+  .proom-box {
+    margin: 10px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+  }
+  .gall-img {
+    width: 100%;
+  }
+}
